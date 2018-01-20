@@ -1,0 +1,45 @@
+/*body {
+	width: 1000px;
+	text-align: center;
+}*/
+
+.wrap {
+	width:100%;
+	text-align: center;
+}
+
+.body {
+	width: 210px;
+	border: 1px solid #ddd;
+	margin: 0 auto;
+	padding: 5px;
+	display: inline-block;
+}
+
+.pic {
+	width: 170px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.brand {
+	text-align: center;
+}
+
+.product {
+	display: block;
+
+}
+
+.price {
+	text-decoration: line-through;
+	display: inline-block;
+	padding-right: 5px;
+	font: 14px Century Gothic;
+	color: #5e5e5e;
+}
+
+.disprice {
+	display: inline-block;
+
+} 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>json</title>
+	
+	<!-- <link rel="stylesheet" href="css/JSON.css"> -->
+</head>
+<body>
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<div class="wrap">
+		<div id="pic"></div>
+	</div>
+
+	<script>
+
+
+
+		$(document).ready(function() {
+			if(localStorage.getItem("iamProduct")) {
+				let productName = localStorage.getItem("iamProduct");
+				console.log(productName);
+
+				$('#pic').html(productName);
+
+
+
+		}
+
+			
+		});
+
+	</script>
+
+</body>
+
+</html>
