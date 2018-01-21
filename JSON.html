@@ -11,7 +11,14 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 	<div class="wrap">
-		<div id="pic"></div>
+		
+		<div id="pic">
+			<img src="https://img2.momoshop.com.tw/ecm/img/online/10/007/08/337/images/bg2_01.png?t=1516182374980" alt="">
+		</div>
+
+		<div class="bpic">
+			<img src="https://img1.momoshop.com.tw/ecm/img/online/10/007/08/337/images/bg2_03.png?t=1516182374980" class="bg2_03">
+		</div>
 	</div>
 
 	<script>
@@ -30,9 +37,12 @@
 					`<div class="body">
 					<img class="pic" src=" ${jsonData.productAll[i].pic} ">
 					<h4 class="brand"> ${jsonData.productAll[i].brand} </h4>
-					<h6 class="prodcut"> ${jsonData.productAll[i].product} </h6>
+					<h4 class="product"> ${jsonData.productAll[i].product} </h4>
+					<p class="money"> ${jsonData.productAll[i].money} </p>
+					<p class="discount"> ${jsonData.productAll[i].discount} </p>
 					<h6 class="price"> ${jsonData.productAll[i].price} </h6>
-					<h6 class="disprice"> ${jsonData.productAll[i].disprice} </h6>
+					<p class="small"> ${jsonData.productAll[i].small} </p>
+					<img class="ii" src=" ${jsonData.productAll[i].ii} ">
 					</div>`);
 
 			}
