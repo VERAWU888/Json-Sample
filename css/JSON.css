@@ -86,6 +86,7 @@ table {
 	margin: 0 10px 15px;
 	padding: 30px 0px 0px 0px;
 	border: 1px solid #ddd;
+	border-radius: 10px;
 	overflow: hidden;
 }
 
@@ -94,6 +95,7 @@ table {
 	padding: 0px;
 	width: 180px;
 	height: 180px;
+	cursor: pointer;
 }
 
 .brand {
@@ -148,12 +150,15 @@ table {
 }
 
 .ii {
-	display: block;  
-	background-color:rgba(1,1,1,1);
+	display: block; 
+	color: #000; 
+	background-color:#B0B0B0;
+	border-radius: 10px;
+	line-height: 33px;
 	margin: 0 auto;
 	width: 160px;
-	height: 36px;
-	border: none;
+	height: 33px;
+	cursor: pointer;
 }
 
 .bpic {

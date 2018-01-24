@@ -57,6 +57,10 @@ table {
   box-sizing: border-box;
 }
 
+.wrap {
+	width: 1000px;
+	margin: 10% auto;
+}
 
 .clearfix, .row{
   &:after {
@@ -68,32 +72,61 @@ table {
 
 
 
-.col-6 {
-	padding: 0 10px;
+.row-6 {
+	padding: 0 5px;
 	display: inline-block;
+	width: 40%;
 }
 
 
-.wrap {
-	width: 1210px;
-	margin: 0 auto;
-}
-
-.col-6 img {
-	width: 400px;
-	height: 400px;
+.row-6 img {
+	width: 350px;
+	height: 350px;
 }
 
 
-.col-6 .brand h5{
-	margin: 10px 0;
-	font:16px "微軟正黑體","Microsoft JhengHei",Helvetica;
+.row-6 .brand{
+	margin-bottom: 15px;
+	color: #7e7e7e;
+	font: 22px "微軟正黑體","Microsoft JhengHei",Helvetica;
 }
 
-.col-6 .brand h4 {
-	margin-bottom: 10px;
-	font:bold 18px "微軟正黑體","Microsoft JhengHei",Helvetica;
+.row-6 .product{
+	margin-bottom: 20px;
+	font: bold 26px "微軟正黑體","Microsoft JhengHei",Helvetica;
 }
+
+.buy-word li {
+	padding: 6px 20px;
+	color: #4e4e4e;
+	font: bold 16px/32px Century Gothic;
+}
+
+
+.prdPrice li {
+	display: inline-block;
+	color: #5e5e5e;
+	font: 18px Century Gothic;
+}
+
+.prdPrice .special {
+	height: 28px;
+	color: #ff2f19;
+	padding-left: 20px;
+	font: 18px Century Gothic;
+	letter-spacing: -1px; 
+	
+}
+
+.prdPrice .price {
+	height: 28px;
+	color: #ff2f19;
+	padding:0 15px;
+	font: bold 32px/36px Century Gothic;
+	letter-spacing: -1px; 
+}
+
+
 
 
 

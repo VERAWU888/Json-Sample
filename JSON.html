@@ -22,12 +22,9 @@
 	</div>
 
 	<script>
-
 		$(document).ready(function() {
-
 			// 清空localStorage
 			localStorage.clear();
-
 			// 讀取Json.html資料
 			var jsonData = callBackdata();
 			for(var i=0; i<jsonData.productAll.length; i++) {
@@ -42,34 +39,42 @@
 					<p class="discount"> ${jsonData.productAll[i].discount} </p>
 					<h6 class="price"> ${jsonData.productAll[i].price} </h6>
 					<p class="small"> ${jsonData.productAll[i].small} </p>
-					<img class="ii" src=" ${jsonData.productAll[i].ii} ">
+					<div class="ii"> ${jsonData.productAll[i].ii} </div>
 					</div>`);
-
 			}
-
 			// 使用者點選後索引 (點選後的第幾個商品)
 			$('.body').click(function() {
-
 				// 清空localStorage
 				localStorage.clear();
-
 				var index = $('.body').index(this);
 				// console.log(index);
 				// console.log(jsonData.productAll[index].brand);
 		
+				
+				// localStorage.setItem("iamProduct", jsonData.productAll[index].pic);
+				// localStorage.setItem("iamProduct", jsonData.productAll[index].brand);
+				// localStorage.setItem("iamProduct", jsonData.productAll[index].product);
+				// localStorage.setItem("iamProduct", jsonData.productAll[index].price);
+				// var pic = ;
+
 				//把點選的索引資訊 存到localStorage  
 				//iamProduct是 key, 後面是value
-				localStorage.setItem("iamProduct", jsonData.productAll[index].pic);
-				localStorage.setItem("iamProduct", jsonData.productAll[index].brand);
-				localStorage.setItem("iamProduct", jsonData.productAll[index].product);
-				localStorage.setItem("iamProduct", jsonData.productAll[index].price);
+				var creatJson = JSON.parse(`
+					{"pic":"${jsonData.productAll[index].pic}",
+					"brand":"${jsonData.productAll[index].brand}",
+					"product":"${jsonData.productAll[index].product}",
+					"money":"${jsonData.productAll[index].money}",
+					"price":"${jsonData.productAll[index].price}"}`);
+
+				console.log(JSON.stringify(creatJson));
+				localStorage.setItem("iamProduct", JSON.stringify(creatJson));
 
 				//網頁跳轉
 				window.location = "JSON_product.html";
-
 			});
 			
 		});
+
 
 	</script>
 
